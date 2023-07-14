@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 15vh;
+  padding: 20px 50px;
+
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+}
