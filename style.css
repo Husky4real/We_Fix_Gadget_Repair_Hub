@@ -169,6 +169,33 @@
   line-height: 15px;
 }
 
+/*product and services*/
+.ourServices {
+  display: flex;
+  height: 50vh;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  height: 5vh;
+  width: 1oop;
+}
+
+.services_image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+.repairs {
+  width: 20%;
+  gap: 20%;
+  display: flex;
+  justify-content: space-between;
+}
 /*footer*/
 footer {
   color: white;
