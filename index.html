@@ -1,168 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Document</title>
-  </head>
-  <body>
-    <!--Header-->
-    <div class="header">
-      <div class="logo">
-        <div class="logo_img">
-          <img src="img/logo.png" alt="" />
-        </div>
-        <div class="home">
-          <a href="/">Home</a>
-        </div>
-      </div>
-
-      <div class="about">
-        <ul>
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Pricing</a></li>
-          <li><a href="/">FAQs</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="signIn">
-        <button class="color1">Login</button>
-        <button class="color2">Sign Up</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>LandingPage</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav section -->
+ 
+    <nav class="navbar navbar-expand-md navbar-light">
+          
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="#">We_Fix_Gadget_Repair_Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 unordered">
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Faqs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+        <div class="botn">
+        <button class="btn btn-outline-success" type="button">Login</button>
+    <button class="btn btn-sm btn-outline-secondary bg-primary text-ligt" type="button">Signup</button>
+    </div> 
     </div>
-    <!--body-->
-    <div class="body">
-      <div class="text">
-        <h1>Expert Repair Services <br /><br />at Your Finger Tips</h1>
-      </div>
-
-      <div class="services">
-        <img src="img/Untitled design (75) 1.png" alt="" />
-      </div>
-
-      <button class="button">Get Started</button>
-
-      <div class="provides">
-        <h2>Who Are We?</h2>
-        <p>
-          We are a team of dedicated and skilled gadget repair specialists with
-          passion for delivering top-notch repair services. With a passion for
-          technology and a <br />commitment to excellence, we are our trusted
-          partners in restoring the functionality of your valuable devices . Our
-          team of experienced technicians combines <br />technical expertise
-          with a meticulous approach to deliver top-quality repairs for a wide
-          range of gadgets, including smartphones, tablets, laptops and more.
-          <br />We understand the frustrations that come with device issues,
-          which is why we prioritize efficiency and customer satisfaction. With
-          transparent pricing, quick <br />
-          turnaround times and a dedication to precision, we strive to exceed
-          your expectations and provide a seamless repair experience. Trust
-          ........ to bring your <br />devices back to life and unlock their
-          full potential once again.
-        </p>
-      </div>
-
-      <div class="ourServices">
-        <div class="heading">
-          <h2>Our Services</h2>
-        </div>
-
-        <div class="services_image">
-          <div class="repairs">
-            <img src="img/Untitled design (76) 1.png" alt="" />
-          </div>
-          <div class="repaair_note">
-            <h3>Smartphone repairs</h3>
-            <p>
-              Our skilled technicians <br />specializes in repairing crack or
-              <br />damaged screens, diagnose and <br />repair any issues with
-              the <br />
-              charging port, ensuring stable <br />and efficient charging, fix
-              and <br />replace faulty batteries and <br />speakers to restore
-              audio <br />capabilities and improve the <br />overall performance
-              of your <br />smartphone.
-            </p>
-          </div>
-
-          <button class="btn">View Services</button>
-        </div>
-
-        <div class="services_image">
-          <div class="repairs">
-            <img src="img/Untitled design (77) 1.png" alt="" />
-          </div>
-
-          <div class="repaair_note">
-            <h3>Tablet Repairs</h3>
-            <p>
-              At ........., we are committed to <br />
-              delivering the highest quality <br />tablet repair services. We
-              use <br />genuine parts and employ <br />
-              industry-leading techniques to <br />ensure the best possible
-              <br />outcomes. Our goal is to provide <br />
-              you with a seamless an d hassle- <br />free repair experience,
-              restoring <br />
-              your tablet’s functionality and <br />extending its lifespan.
-            </p>
-          </div>
-
-          <button class="btn">View Services</button>
-        </div>
-
-        <div class="services_image">
-          <div class="repairs">
-            <img src="img/Untitled design (78) 1.png" alt="" />
-          </div>
-
-          <div class="repaair_note">
-            <h3>Laptops and Computer <br />Repairs</h3>
-            <p>
-              We understand the importance of <br />your laptop or computer in
-              both your <br />personal and professional life. That’s <br />why
-              our team of skilled technicians is <br />dedicated to providing
-              reliable <br />hardware repairs, software <br />troubleshooting,
-              virus and malware <br />removal, data recovery, upgrades <br />and
-              optimization services such as <br />RAM expansions, SSD
-              installations <br />and graphic card updates.
-            </p>
-          </div>
-
-          <button class="btn">View Services</button>
-        </div>
-
-        <div class="services_image">
-          <div class="repairs">
-            <img src="img/Untitled design (79) 1.png" alt="" />
-          </div>
-
-          <div class="repaair_note">
-            <h3>
-              Gaming Console <br />
-              Repairs
-            </h3>
-            <p>
-              We understand how important <br />your gaming console is to your
-              <br />gaming experience. Our <br />technicians provide expert
-              repair <br />services for gaming consoles <br />such as disc drive
-              problem, the <br />infamous Red Ring of <br />
-              Death(RROD) or controller <br />malfunctions, ensuring you get
-              <br />back to gaming in no time.
-            </p>
-          </div>
-
-          <button class="btn">View Services</button>
-        </div>
-      </div>
-
-      <!--footer-->
-              <div class="mobe">
+  </div>
+</nav>
+  
+  <!--  -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    
+      <section>
+          <div clas="container">
+            <h2>Easy Steps To Follow</h2>
+            <ol>
+                <li>Click on BUY NOW</li>
+                <li>Add delivery details</li>
+                <li>Checkout and pay</li>
+                <li>Save receipt for reference</li>
+                <li>Expect the product(s)</li>
+            </ol>
+            </div>
+      </section>
+      
+      
+      <section id="newsletter" class="container1">
+        <div class="container">
+         <h2 class="containerels">Subscribe to Our Newsletter</h2>
+    <p class="containerel">For exclusive contents, discounts and opportunities</p>
+         <form>
+<!-- Input group -->
+<div class="d-flex justify-content-center">
+    <div class="input-group w-auto">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter your email address"
+          aria-label="Example input"
+          aria-describedby="button-addon1"
+        />
+        <button class="btn btn-primary" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+            SUBSCRIBE NOW
+        </button>
+    </div>
+</div>     
+         </form>      
+        </div>  
+      </section>
+      
+      <footer class="stretch">
+        <div class="mobe">
         <div class="fst">
             <p>Your Trusted Partners for Reliable Gadget Repairs</p>
         </div>
@@ -185,9 +113,6 @@
             <p>saferepairs@gmail.com</p>
         </div>
         </div>
-    </footer>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
+    </footer>
+</body>
 </html>
