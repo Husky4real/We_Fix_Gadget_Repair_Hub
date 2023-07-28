@@ -75,7 +75,7 @@
 .color1 {
   border: 1px solid blue;
   color: blue;
-  background-color: rgb(236, 236, 236);
+  background-color: white;
   padding: 5px 10px;
   border-radius: 10px;
   transition: 0.5s;
@@ -83,6 +83,7 @@
   height: 30px;
   font-size: 11px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .color1:hover {
@@ -100,11 +101,12 @@
   height: 30px;
   font-size: 11px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .color2:hover {
   color: blue;
-  background-color: rgb(236, 236, 236);
+  background-color: white;
   transition: 0.5s;
 }
 
@@ -129,19 +131,21 @@
   margin-top: 150px;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  padding: 7px 35px;
+.latter {
+  padding: 7px 20px;
   border-radius: 15px;
   border: 1px solid blue;
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
   background-color: blue;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.latter:hover {
+  color: blue;
+  background-color: white;
+  transition: 0.5s;
 }
 
 .button:hover {
@@ -291,8 +295,26 @@ footer {
 
 .our-service .cards {
   gap: 3.62rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  color: blue;
+  background-color: white;
+  transition: 0.5s;
+}
 .our-service .cards .card {
   max-width: 17.25rem;
   padding-inline: 0;
