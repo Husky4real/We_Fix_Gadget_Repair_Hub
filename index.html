@@ -1,118 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
+  <head>
+    <meta charset="UTF-8" />
+
     <title>LandingPage</title>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
-       <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- nav section -->
- 
-    <nav class="navbar navbar-expand-md navbar-light">
-          
-  <div class="container-fluid">
-    
-    <a class="navbar-brand" href="#">We_Fix_Gadget_Repair_Hub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 unordered">
-        <li class="nav-item">
-          <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
-        </li>
-        <li class="nav-item">
+    <nav class="navbar navbar-expand-lg saferepairs-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="./img/logo.png" alt="logo" />
+          <a class="navbar-brand" href="#">SafeRepairs</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Nav Items -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Faqs</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
-        </li>
-      </ul>
-        <div class="botn">
-        <button class="btn btn-outline-success" type="button">Login</button>
-    <button class="btn btn-sm btn-outline-secondary bg-primary text-ligt" type="button">Signup</button>
-    </div> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contract</a>
+          </li>
+        </ul>
+
+        <!-- Collapsing Navbar -->
+        <div
+          class="collapse d-flex justify-content-end align-items-center"
+          id="navbarSupportedContent"
+        >
+          <button class="btn btn-outline-success" type="button">Login</button>
+          <button class="btn btn-outline-success" type="button">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body -->
+    <!-- Hero -->
+    <div class="hero-section">
+      <h1>Expert Repair Services at Your Finger Tips</h1>
+      <img src="./img/hero-image.png" alt="hero-image" />
     </div>
-  </div>
-</nav>
-  
-  <!--  -->  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
-    
-      <section>
-          <div clas="container">
-            <h2>Easy Steps To Follow</h2>
-            <ol>
-                <li>Click on BUY NOW</li>
-                <li>Add delivery details</li>
-                <li>Checkout and pay</li>
-                <li>Save receipt for reference</li>
-                <li>Expect the product(s)</li>
-            </ol>
+    <div class="latter-box">
+      <button>Get Started</button>
+    </div>
+
+    <!-- Who We Are -->
+    <div class="container p-3 g-2 d-flex flex-column who-we-are">
+      <h1>Who Are We?</h1>
+      <p>
+        We are a team of dedicated and skilled gadget repair specialists with
+        passion for delivering top-notch repair services. With a passion for
+        technology and a commitment to excellence, we are our trusted partners
+        in restoring the functionality of your valuable devices . Our team of
+        experienced technicians combines technical expertise with a meticulous
+        approach to deliver top-quality repairs for a wide range of gadgets,
+        including smartphones, tablets, laptops and more. We understand the
+        frustrations that come with device issues, which is why we prioritize
+        efficiency and customer satisfaction. With transparent pricing, quick
+        turnaround times and a dedication to precision, we strive to exceed your
+        expectations and provide a seamless repair experience. Trust SafeRepairs
+        to bring your devices back to life and unlock their full potential once
+        again.
+      </p>
+    </div>
+
+    <!-- Our Service -->
+    <div
+      class="container d-flex align-items-center justify-content-center p-3 g-2 flex-column our-service"
+    >
+      <h1>Our Services</h1>
+
+      <!-- Cards -->
+      <div class="row row-cols-4 cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="./img/smartphone-repairs.png"
+            class="card-img-top card-img"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Smartphone Repairs</h5>
+            <p class="card-text text-truncate">
+              Our skilled technicians specializes in repairing crack or damaged
+              screens, diagnose and repair any issues with the charging port,
+              ensuring stable and efficient charging, fix and replace faulty
+              batteries nd speakers to restore audio capabilities and improve
+              the overall performance of your smartphone.
+            </p>
+            <a href="#" class="btn btn-primary">View Services</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="./img/tablet-repairs.png"
+            class="card-img-top card-img"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tablet Repairs</h5>
+            <p class="card-text text-truncate">
+              At SafeRepairs, we are committed to delivering the highest quality
+              tablet repair services. We use genuine parts and employ
+              industry-leading techniques to ensure the best possible outcomes.
+              Our goal is to provide you with a seamless an d hassle-free repair
+              experience, restoring your tablet’s functionality and extending
+              its lifespan.
+            </p>
+            <a href="#" class="btn btn-primary">View Services</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="./img/laptop-repairs.png"
+            class="card-img-top card-img"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Laptop and Computer Repairs</h5>
+            <p class="card-text text-truncate">
+              We understand the importance of your laptop or computer in both
+              your personal and professional life. That’s why our team of
+              skilled technicians is dedicated to providing reliable hardware
+              repairs, software troubleshooting, virus and malware removal, data
+              recovery, upgrades and optimization services such as RAM
+              expansions, SSD installations and graphic card updates.
+            </p>
+            <a href="#" class="btn btn-primary">View Services</a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <img
+            src="./img/gaming-repairs.png"
+            class="card-img-top card-img"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gaming Console Repairs</h5>
+            <p class="card-text text-truncate">
+              We understand how important your gaming console is to your gaming
+              experience. Our technicians provide expert repair services for
+              gaming consoles such as disc drive problem, the infamous Red Ring
+              of Death(RROD) or controller malfunctions, ensuring you get back
+              to gaming in no time.
+            </p>
+            <a href="#" class="btn btn-primary">View Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <section
+      class="easy-steps p-3 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="container p-3 d-flex align-items-center justify-content-around"
+      >
+        <h2>Easy Steps To Follow</h2>
+        <ol class="step-list">
+          <li>Click on BUY NOW</li>
+          <li>Add delivery details</li>
+          <li>Checkout and pay</li>
+          <li>Save receipt for reference</li>
+          <li>Expect the product(s)</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Our Clients -->
+    <section class="our-clients p-3 d-flex align-items-center">
+      <div class="container d-flex align-items-center flex-column g-3">
+        <h1 class="">What Our Clients Say</h1>
+
+        <!-- Cards -->
+        <div class="row gap-5">
+          <div class="col card">
+            <!-- Image -->
+            <img src="./img/avatar1.png" alt="avatar" />
+            <div class="body">
+              <!-- Text -->
+              <h5>Bella John</h5>
+              <p class="line-clamp p-3">
+                “I had a gaming console that was experiencing the dreaded Ring of
+                Death. I was devastated but through this platform, I was able to
+                fix it. They didn’t only fixed the issue but also provided
+                excellent customer service throughout the process. My console is
+                now running smoothly and I’m back to enjoying my favourite games.
+                Thank you”
+              </p>
+              
+              <!-- Stars -->
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
             </div>
-      </section>
-      
-      
-      <section id="newsletter" class="container1">
-        <div class="container">
-         <h2 class="containerels">Subscribe to Our Newsletter</h2>
-    <p class="containerel">For exclusive contents, discounts and opportunities</p>
-         <form>
-<!-- Input group -->
-<div class="d-flex justify-content-center">
-    <div class="input-group w-auto">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Enter your email address"
-          aria-label="Example input"
-          aria-describedby="button-addon1"
-        />
-        <button class="btn btn-primary" type="button" id="button-addon1" data-mdb-ripple-color="dark">
-            SUBSCRIBE NOW
-        </button>
-    </div>
-</div>     
-         </form>      
-        </div>  
-      </section>
-      
-      <footer class="stretch">
-        <div class="mobe">
+          </div>
+          <div class="col card">
+            <!-- Image -->
+            <img src="./img/avater2.png" alt="avatar" />
+            <div class="body">
+              <!-- Text -->
+              <h5>Kelvin Ben</h5>
+              <p class="line-clamp p-3">
+                “I recently had my computer repaired through this platform. The
+                technicians were knowledgeable and efficient, they went above and
+                beyond to ensure that my computer was working perfectly. The
+                customer support team were responsive and helpful. I highly
+                recommend their service for any computer repair needs”
+              </p>
+             
+              <!-- Stars -->
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="col card">
+            <!-- Image -->
+            <img src="./img/avater3.png" alt="avatar" />
+            <div class="body">
+              <!-- Text -->
+              <h5>Anita Augustine</h5>
+              <p class="line-clamp p-3">
+                “I had a crack on y smartphone and I was worried that it couldn’t
+                be fixed. They came to the rescue, their expert technicians
+                successfully restored my smartphone and it’s working flawlessly
+                now. I was impressed by their professionalism and attention to
+                detail. Thank you for saving my device”
+              </p>
+             
+              <!-- Stars -->
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_100_165)">
+                    <path
+                      d="M11.9999 18.26L4.94691 22.208L6.52191 14.28L0.586914 8.792L8.61391 7.84L11.9999 0.5L15.3859 7.84L23.4129 8.792L17.4779 14.28L19.0529 22.208L11.9999 18.26Z"
+                      fill="#FAFF00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_100_165">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="container1">
+      <div class="container position-relative">
+        <h2 class="">Subscribe to Our Newsletter</h2>
+        <p class="containerel">
+          For exclusive contents, discounts and opportunities
+        </p>
+        <form>
+          <!-- Input group -->
+          <div class="d-flex justify-content-center">
+            <div class="input-group w-auto">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your email address"
+                aria-label="Example input"
+                aria-describedby="button-addon1"
+              />
+              <button
+                class="btn btn-primary"
+                type="button"
+                id="button-addon1"
+                data-mdb-ripple-color="dark"
+              >
+                SUBSCRIBE NOW
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="stretch">
+      <div class="mobe">
         <div class="fst">
-            <p>Your Trusted Partners for Reliable Gadget Repairs</p>
+          <p>Your Trusted Partners for Reliable Gadget Repairs</p>
         </div>
         <div class="snd">
-            <p>Company</p>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Review</p>
-            <p>Contact Us</p>
+          <p>Company</p>
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Review</p>
+          <p>Contact Us</p>
         </div>
         <div class="thd">
-            <p>Terms & Conditions</p>
-            <p>Cookie Policy</p>
-            <p>FAQs</p>
-            <p>Delivery & Returns</p>
+          <p>Terms & Conditions</p>
+          <p>Cookie Policy</p>
+          <p>FAQs</p>
+          <p>Delivery & Returns</p>
         </div>
         <div class="fur">
-            <p>Stay in Touch</p>
-            <p>+2349178452431</p>
-            <p>saferepairs@gmail.com</p>
+          <p>Stay in Touch</p>
+          <p>+2349178452431</p>
+          <p>saferepairs@gmail.com</p>
         </div>
-        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
+
+<!-- Scripts -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+  crossorigin="anonymous"
+></script>
