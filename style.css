@@ -1,3 +1,7 @@
+:root {
+  --margin-increment: 10px; /* Define the increment value here */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -106,13 +110,6 @@
 
 /*body*/
 
-.body {
-  height: 80vh;
-  width: 100%;
-
-  background-color: blue;
-}
-
 .text {
   color: white;
   padding-top: 15px;
@@ -220,3 +217,260 @@ footer {
 /* .fst{
     margin-: 80px;
 } */
+
+/* Hero */
+.hero-section {
+  height: 28.6875rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #0000ff;
+}
+
+.hero-section h1 {
+  max-width: 47.75rem;
+  color: #fff;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem; /* 120% */
+  margin-bottom: 100px;
+}
+
+.hero-section img {
+  max-width: 49.5rem;
+  width: 100%;
+  position: absolute;
+  top: 19.625rem;
+}
+
+.hero-section + .latter-box {
+  height: 17rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.latter-box button {
+  margin-top: 10rem;
+}
+
+.who-we-are h1 {
+  color: #0c0c0c;
+  /* font-family: Poppins; */
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5625rem; /* 118.75% */
+}
+
+.who-we-are p {
+  width: 80rem;
+  text-align: justify;
+  color: #0c0c0c;
+  /* font-family: Poppins; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+}
+
+.our-service h1 {
+  color: #0c0c0c;
+  /* font-family: Poppins; */
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5625rem; /* 118.75% */
+}
+
+.our-service .cards {
+  gap: 3.62rem;
+}
+
+.our-service .cards .card {
+  max-width: 17.25rem;
+  padding-inline: 0;
+}
+
+.our-service .cards .card .card-img {
+  height: 16rem;
+  object-fit: cover;
+}
+
+.our-service .cards .card .card-img h1 {
+  color: #000;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 100% */
+}
+
+.our-service .cards .card .card-title {
+  color: #000;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 150% */
+}
+
+.easy-steps {
+  height: 31.5rem;
+  background: #feefde;
+}
+
+.easy-steps h2 {
+  color: var(--primary-600, #00f);
+  /* font-family: Poppins; */
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5625rem; /* 118.75% */
+}
+
+.easy-steps ol li {
+  margin-left: calc(var(--margin-increment) * (counter(list-item) - 1));
+}
+
+/* Define the CSS counter and CSS variables */
+ol.step-list {
+  counter-reset: step-counter;
+  --step-margin: 30px;
+
+  /* Other Styles */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style the list items as steps */
+ol.step-list li {
+  list-style: none;
+  position: relative;
+  padding-left: var(--step-margin);
+
+  /* Other Styles */
+  color: #000;
+  /* font-family: Poppins; */
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 100% */
+}
+
+ol.step-list li:before {
+  content: counter(step-counter) ".";
+  counter-increment: step-counter;
+  position: absolute;
+  left: 0;
+
+  /* Other Styles */
+  color: var(--primary-600, #00f);
+  /* font-family: Poppins; */
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 75% */
+}
+
+/* Reverse the order of the list items */
+ol.step-list li:nth-child(1) {
+  margin-left: calc(1 * var(--step-margin));
+}
+
+/* Adjust the left margin for each step */
+ol.step-list li:nth-child(2) {
+  margin-left: calc(2 * var(--step-margin));
+}
+
+ol.step-list li:nth-child(3) {
+  margin-left: calc(3 * var(--step-margin));
+}
+
+ol.step-list li:nth-child(4) {
+  margin-left: calc(4 * var(--step-margin));
+}
+
+ol.step-list li:nth-child(5) {
+  margin-left: calc(5 * var(--step-margin));
+}
+
+.our-clients {
+  height: 31.5rem;
+}
+
+.our-clients .card {
+  max-width: 23.3125rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background: #0000d4;
+  color: #ffffff;
+}
+
+.our-clients .card img {
+  max-width: 7.75rem;
+  max-height: 7.75rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  translate: 0 -58px;
+}
+
+.our-clients h1 {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  color: #000;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 150% */
+}
+
+.our-clients h5 {
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.our-clients p {
+  color: #fff;
+  text-align: justify;
+  /* font-family: Poppins; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+}
+
+.our-clients .body {
+  translate: 0 -35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
